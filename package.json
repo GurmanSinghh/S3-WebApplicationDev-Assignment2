@@ -26,16 +26,7 @@
   },
   "description": "assignment 1 comp 229 gurman",
   "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manavdeepbajwa/COMP229_ASSIGNMENT1_Manavdeep.git"
-  },
-  "author": "Gurman Singh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/manavdeepbajwa/COMP229_ASSIGNMENT1_Manavdeep/issues"
-  },
-  "homepage": "https://github.com/manavdeepbajwa/COMP229_ASSIGNMENT1_Manavdeep#readme",
+  
   "devDependencies": {
     "@types/connect-flash": "^0.0.37",
     "@types/express": "^4.17.13",
