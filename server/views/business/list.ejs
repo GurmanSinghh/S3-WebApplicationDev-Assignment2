@@ -1,0 +1,50 @@
+<%- include ('../templates/header.ejs'); %>
+
+<%- include ('../templates/main_nav.ejs'); %> 
+
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-offsett-3 col-md-10">
+            <h1><%= title %> </h1>
+            <a href = "/business-list/add" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i>Add a business</a>
+            
+            <br>
+            <table class="table table-bordered table-stripped table-hover">
+                <!-- Header Row-->
+                <tr class="trows">
+                    <th class="text-center col-2">Name</th>
+                    <th class="text-center  col-2">Contact Number</th>
+                    <th class="text-center  col-1">Email Address</th>
+                    
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+                </tr>
+
+                <!--Repeatable Template Row-->
+                <% for(let count = 0; count < BusinessList.length; count++){ %> 
+                    <tr class="tcontent">
+                        <td class="text-center col-2"><%= BusinessList[count].name %> </td>
+                        <td class="text-center col-2"><%= BusinessList[count].contact %> </td>
+                        <td class="text-center col-1"><%= BusinessList[count].email %> </td>
+                       
+                        <td class="text-center col-1"> 
+                             <a href="/business-list/edit/<%= BusinessList[count]._id %> "  class="btn btn-primary" >
+                            <i class="fas fa-pencil alt"></i>Edit</a>              
+                        </td>
+                        <td class="text-center col-1"> 
+                            <a href="/business-list/delete/<%= BusinessList[count]._id %> "  class="btn btn-danger" >
+                           <i class="fas fa-trash alt"></i>Delete</a>              
+                       </td>
+                    </tr>
+                    <% } %> 
+            </table>
+        </div>
+    </div>
+</main>
+
+
+<%- include ('../templates/bottom_nav.ejs'); %>
+
+<%- include ('../templates/footer.ejs'); %> 

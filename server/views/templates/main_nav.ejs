@@ -1,0 +1,55 @@
+<% //</* Gurman Singh 301183986 COMP229*/> %> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href><img src="/Assets/images/Logo.png" height="60px" weight="10px"></a>
+      <a  class="navbar-brand" href="/">Gurman Singh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+                 
+          
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/home"><i class="fa-solid fa-house-chimney-window"></i>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/about"><i class="fa-solid fa-circle-info"></i>About Me</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/projects"><i class="fa-solid fa-briefcase"></i></i>Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/services"><i class="fa-solid fa-bell-concierge"></i>Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/business-list"><i class="fa-solid fa-house-chimney-window"></i>Business</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/contact"><i class="fa-solid fa-phone"></i>Contact Me</a>
+          </li>
+
+          <% if(typeof displayName == 'string' && displayName) {%>
+            <li class="navbar-text"><i class="fas fa-lg fa-user">  </i>Welcome, <%= displayName %></li>
+            <li class="nav-item"><a href="/logout" class="nav-link">
+              <i class="fas fa-lg fa-sign-out-alt"></i>Logout
+            </a></li>
+          <% } else { %> 
+
+            <li class="nav-item"><a href="/login" class="nav-link">
+              <i class="fas fa-lg fa-sign-in-alt"></i>Login
+            </a></li>
+
+            <% } %> 
+
+
+          
+      </div>
+    </div>
+  </nav>

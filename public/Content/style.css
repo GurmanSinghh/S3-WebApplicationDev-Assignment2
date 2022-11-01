@@ -1,0 +1,36 @@
+/* Custom css goes here */
+/* Gurman Singh 301183986 COMP229*/
+body{
+    background-image: url("/Assets/images/cool-background.png");
+    
+    
+    color: antiquewhite;
+    
+}
+
+.centre{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 28%;
+      
+
+}
+
+.borders {
+    width: 100%;
+    border: 7.5px solid rgba(237, 239, 241, 0.984);
+    padding: 20px;
+    margin: 20px;
+  }
+
+.trows{
+    color: aliceblue;
+}
+
+.tcontent{
+    color: aliceblue;
+}
+
+  
